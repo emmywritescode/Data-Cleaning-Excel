@@ -17,3 +17,10 @@ It was observed that in many columns of the data set, there were characters with
   ![](Dirty_Name.png)  | ![](Clean_Name.png) 
 ### Renaming and unwrapping of text
 The column named 'â†“OVA' was renamed to 'OVA'. The text in the 'Club' column was unwrapped to reveal the names of the various clubs the players were registered to. It was also observed that some entries in this column contained an additional character "1. " and this was also cleaned using the Find and Replace option.
+### Splitting columns and extracting data from other columns
+The contract column was observed to have a delimiter that indicated the beginning and end of each player's contract, while some were on loan. The 'Text to Columns' option on the Data tab was used to split the Contract column into 'ContractStart' and 'ContractEnd'. Upon keen observation, the year in the 'Joined' column matched the 'ContractStart' for each player and this was used in completing the data. For players who were on loan or without a club, their 'ContractStart' year was obtained from the 'Joined' column using the TEXT function. The year in the 'Loan Date End' column was also extracted into the 'ContractEnd' column for players on loan.
+ Dirty Contract        |     Clean Contract 
+:---------------------:|:---------------------:
+  ![](contract1.png)   | ![](contract2.png) 
+
+
