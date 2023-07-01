@@ -1,7 +1,7 @@
 # FIFA 21 DATA CLEANING WITH MICROSOFT EXCEL
 ![](fifa21.png)
 ## Introduction
-This is a data-cleaning project carried out using Microsoft Excel tools and functions. As a participant in the data cleaning challenge organized by Promise Chinonso and Victor Somadina, I opted to utilize Excel in carrying out this daunting task. Microsoft Excel has a friendly user interface with easy-to-understand functions and features that aid data cleaning. Also, the data set was within Excel's handling capacity, hence my reason for using it for this challenge. The challenge spanned 7 days between March 10-16th earlier this year.
+This project demonstrates the power and capabilities of Microsoft Excel in performing data cleaning tasks. As a participant in the data cleaning challenge organized by Promise Chinonso and Victor Somadina, I opted to utilize Excel in carrying out this daunting task. Microsoft Excel has a friendly user interface with easy-to-understand functions and features that aid data cleaning. Also, the data set was within Excel's handling capacity, hence my reason for using it for this challenge. The challenge spanned 7 days between March 10-16th earlier this year.
 ## About the data set
 The data set used was obtained from [Kaggle](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring). It contains various attributes and statistics of players in the popular video game FIFA 21, such as player ratings, skill moves, preferred positions, and more. The data set consists of 18,979 rows and 77 columns of data.
 ## The purpose of data cleaning
@@ -22,5 +22,21 @@ The contract column was observed to have a delimiter that indicated the beginnin
  Dirty Contract        |     Clean Contract 
 :---------------------:|:---------------------:
   ![](contract1.png)   | ![](contract2.png) 
-
-
+### Converting to uniform measurements
+The 'Height' and 'Weight' columns had a problem of non-uniformity. While some players' height was measured in feet and inches, those of others were measured in centimeters. Most players had their weight measured in kilograms while that of a few were measured in pounds. This non-uniformity was corrected using a combination of several Excel functions like IF, RIGHT, VALUE, LEFT, LEN, ROUND, SUM, MID, and CONVERT.
+ Height Conversion         |   
+:-------------------------:|
+ ![](convert_height.png)   | 
+ 
+ Weight Conversion         |
+:-------------------------:|
+ ![](convert_weight.png)   |
+### Converting occurences of 'K' and 'M' in numerical columns
+In many of the numerical columns K was used to denote Thousands while M denoted Millions. This was the case for 'Value', 'Wage', and the 'Release Clause' columns. Few occurences of 'K' was found in the Hits column as well and they were all converted accordingly using a combination of several Excel functions like IF, RIGHT, LEFT and LEN.
+ Value Conversion          |   
+:-------------------------:|
+ ![](value_conversion.png) | 
+ 
+ Wage                      |
+:-------------------------:|
+ ![](wage_conversion.png)  |
