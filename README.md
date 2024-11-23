@@ -5,7 +5,7 @@ This project demonstrates the power and capabilities of Microsoft Excel in perfo
 ## About the data set
 The data set used was obtained from [Kaggle](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring). It contains various attributes and statistics of players in the popular video game FIFA 21, such as player ratings, skill moves, preferred positions, and more. The data set consists of 18,979 rows and 77 columns of data.
 ## The purpose of data cleaning
-The purpose of data cleaning, also known as data cleansing or data scrubbing, is to improve the quality and reliability of data by identifying and correcting or removing errors, inconsistencies, and inaccuracies. Data cleaning is an essential step in the data preparation process and plays a crucial role in ensuring the accuracy and integrity of data for analysis, reporting, and decision-making purposes.
+The purpose of data cleaning, also known as data cleansing or data scrubbing is to improve the quality and reliability of data by identifying and correcting or removing errors, inconsistencies, and inaccuracies. Data cleaning is an essential step in the data preparation process and plays a crucial role in ensuring the accuracy and integrity of data for analysis, reporting, and decision-making purposes.
 ## The data cleaning process
 ### Checking for nulls and duplicates
 In order to achieve this quickly, the 'Remove Duplicates' option on the Data tab was used while the Filter button was used to check for null and blank columns. No duplicates existed but there were some blank fields which were noted and addressed accordingly in the later steps.
